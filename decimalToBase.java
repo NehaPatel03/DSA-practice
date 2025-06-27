@@ -3,7 +3,7 @@ import java.util.*;
 public class decimalToBase {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a decimal number");
+        System.out.println("Enter a decimal number and a base");
         int d = sc.nextInt();
         int b = sc.nextInt();
         int conv = 0;
