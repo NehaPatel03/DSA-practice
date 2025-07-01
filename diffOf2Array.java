@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class sumOf2Array {
+public class diffOf2Array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the no. of elements of first array:");
@@ -25,7 +25,7 @@ public class sumOf2Array {
                 startInd = n1 - n2;
             }
             for (int i = startInd; i < max; i++) {
-                c[i] = arr1[i] + arr2[i - startInd];
+                c[i] = arr2[i - startInd] - arr1[i];
             }
         } else {
             for (int i = 0; i < (n2 - n1); i++) {
@@ -33,7 +33,7 @@ public class sumOf2Array {
                 startInd = n2 - n1;
             }
             for (int i = startInd; i < max; i++) {
-                c[i] = arr1[i - startInd] + arr2[i];
+                c[i] = arr2[i] - arr1[i - startInd];
             }
         }
         for (int i = 0; i < c.length; i++) {
